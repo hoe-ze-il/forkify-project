@@ -7,10 +7,6 @@ import paginationView from './views/paginationView.js';
 import bookmarksView from './views/bookmarksView.js';
 import addRecipeView from './views/addRecipeView.js';
 
-// import icons from '../img/icons.svg'; // Parcel 1
-
-import 'core-js/stable'; // Polyfilling Everything else
-import 'regenerator-runtime/runtime'; // Polyfilling Async Await
 // NEW API URL (instead of the one shown in the video)
 // https://forkify-api.jonas.io
 
@@ -133,6 +129,7 @@ const newFeature = function () {
 };
 
 const init = function () {
+  console.log('Welcome to the application!');
   bookmarksView.addHandlerRender(controlBookmarks);
   recipeView.addHandlerRender(controlRecipes);
   recipeView.addHandlerUpdateServings(controlServings);
